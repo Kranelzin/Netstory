@@ -1,0 +1,304 @@
+/*Página principal e corpo*/
+
+/*cabeçalho*/
+
+
+#topolaranja{
+  background-color: #ff503f;
+  height: 5px;
+  margin-top: 0%;
+}
+
+/*Menu*/
+
+.container{
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: top ;
+  justify-content: left;
+  z-index: 1;
+  margin-top: 1%;
+}
+  
+#checkbox-menu{
+  position: absolute;
+  opacity: 0;
+}
+  
+label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 35px;
+}
+  
+label span{
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 30px;
+  background: #ff503f;
+  transition: 0.25s ease-in-out;
+}
+  
+label span:nth-child(1){
+  top: 0;
+}
+  
+label span:nth-child(2){
+  top: 8px;
+}
+  
+label span:nth-child(3){
+  top: 16px;
+}
+  
+#checkbox-menu:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+  
+#checkbox-menu:checked + label span:nth-child(2){
+  opacity: 0;
+}
+  
+#checkbox-menu:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top:8px;
+}
+#menu{
+  position: absolute;
+  margin-top: 37px;
+  margin-left: -45px;
+  display: none;
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-bottom: 5px;
+  border: solid 1px #ff503f;
+  border-radius: 5px;
+  list-style: none;
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+#categorias{
+  font-size: 23px;
+  border-bottom: solid 1px #cccccc;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+
+}
+#menu li a{
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+#menufantasma{
+  padding-right: 250px;
+}
+#b{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  padding-left: 10px;
+  border-bottom: solid 1px #cccccc;
+  background-color: #e1e1e1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#b:hover{
+    background-color: #cecece;
+}
+
+#c{
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+/*Cabeçalho*/
+
+#linhadecima{
+  display: inline-block;
+  margin-left: 2%;
+}
+#logo{
+  position: absolute;
+  margin-left: 6%;
+  border: none;
+  background-color: transparent;
+  border-left: solid 2px lightgray;
+  padding-left: 20px;
+  z-index: 1;
+}
+
+#caixadepesquisa{
+  position: absolute;
+  border-radius:15px;
+  width:350px;
+  margin-left: 38%;
+  z-index: 1;
+}
+
+#pesquisa{
+  float:center;
+  background-color:transparent;
+  padding-left:15px;
+  font-style:italic;
+  font-size:18px;
+  border:solid 1px;
+  height:32px;
+  width:330px;
+}
+
+.botao {
+  position: absolute;
+  background-image:url("lupa.png");
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  border: none;
+  margin-top: 3px;
+  margin-left: -35px;
+}
+
+#banners{
+  padding: 0.1%;
+  margin-top: 5%;
+}
+
+
+/*Corpo*/
+
+/*botoes*/
+
+.botoes{
+  position: relative;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  display: block;
+  border-radius: 3px;
+  margin-top: 3%;
+  z-index: 1;
+}
+#recentes{
+  color: white;
+  border-bottom: solid #ff503f 5px;
+  border-radius: 3px;
+  padding: 5px 25px 5px 25px;
+  text-decoration: none;
+  background-color:#24757a ;
+}
+
+#populares{
+  margin-left: 15px;
+  color: white;
+  border-bottom: solid #24757a 5px;
+  border-radius: 3px;
+  padding: 5px 25px 5px 25px;
+  text-decoration: none;
+  background-color: #ff503f ;
+}
+
+#seguindo{
+  margin-left: 15px;
+  color: white;
+  border-bottom: solid #ff503f 5px;
+  border-radius: 3px;
+  padding: 5px 25px 5px 25px;
+  text-decoration: none;
+  background-color: #24757a ;
+}
+
+/*capas livros*/
+
+#capalivros{
+  display: inline-block;
+}
+
+#capalivro{
+  position: relative;
+  margin-top: 12%;
+  margin-left: 2%;
+  border: solid 1px;
+  border-radius: 3px;
+}
+
+#capalivro2{
+  position: relative;
+  margin-top: 12%;
+  margin-left: 2%;
+  border: solid 1px;
+  border-radius: 3px;
+}
+
+/*Página Categorias*/
+
+#categoriastitle{
+  position: absolute;
+  margin: 2%;
+  text-decoration: underline;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  border: none;
+  color: white;
+  background-color: #ff503f;
+  border: solid 2px #24757a;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/*Página Sobre*/
+
+#video{
+  margin: 2%;
+  border-radius: 3px;
+  border: solid 2px;
+}
+
+#titulosobre{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  margin-top: 2%;
+  margin-bottom: -1%;
+  margin-left: 2%;
+  color: black;
+  text-decoration: underline;
+}
+
+#textosobre{
+  position: relative;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-right: 5%;
+
+}
+
+#login{
+  font-size: 30px;
+  color: black;
+  margin-left: 1%;
+
+}
+
+#email{
+  margin-left: 1%;
+  position: absolute;
+  padding: 15px;
+
+}
+#senha{
+  margin-left: 1%;
+  padding: 15px;
+  margin-top: 6%;
+}
+

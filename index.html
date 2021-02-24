@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>NetStory</title>
+
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+        <script src="script.js"></script>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/js/uikit-icons.min.js"></script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    </head>
+    <body>
+
+       <header>
+
+            <!--Rodateto-->
+            <div id = "topolaranja">
+            </div>
+
+            <div id ="linhadecima">
+                <!--MENU-->
+                <div class="container">
+                    <input type="checkbox" id="checkbox-menu" onclick="abrirmenu('menu')">
+                    <label for="checkbox-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <nav>
+                        <ul id = "menu">
+                            <li id ="menufantasma"></li>
+                            <li id = "categorias">
+                                <a href = "categorias.html">Categorias</a>
+                            </li>
+                            <li id = "b">
+                                <a href="Acao">Ação</a>
+                            </li>
+                            <li id = "b">
+                                <a href = "Aventura">Aventura</a>
+                            </li>
+                            <li id = "b">
+                                <a href = "Comedia">Comédia</a>
+                            </li>
+                            <li id =  "b">
+                                <a href = "Romance">Romance</a>
+                            </li>
+                            <li id ="c">
+                                <a href="sobre.html">Sobre</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!--LOGO-->
+                <div id = "logo">
+                    <a href="index.html"> 
+                        <img src="logo.png" alt="logo" >
+                    </a>
+                </div>
+
+                <!--CAIXA DE PESQUISA-->
+                <div id = "caixadepesquisa">
+                    <input type="text" id = "pesquisa" placeholder = "O que te interessa agora?"/>
+                    <input type="button" id ="botaolupa" class="botao">
+                </div>
+            </div>
+            <!--SLIDESHOW-->
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 1600:300; animation: push" uk-slideshow="autoplay: true" uk-slideshow="pause-on-hover: true"  id = "banners">
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="banner1.png" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="banner2.png" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="banner3.png" alt="" uk-cover>
+                    </li>
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            
+            </div>
+ 
+       </header>
+
+       <div class="botoes">
+           <a href="#" id = "recentes" onclick="mudabotao('recentes','populares','seguindo')">Recentes</a>
+           <a href="#" id = "populares" onclick="mudabotao('populares','recentes','seguindo')">Populares</a>
+           <a href="#" id = "seguindo" onclick="mudabotao('seguindo','populares','recentes')">Seguindo</a>
+        </div>
+
+       <div id = "capaslivros">
+            <img src="imagens/capalivro.png" alt="capalivro" id = "capalivro">
+            <img src="imagens/capalivro2.png" alt="capalivro2" id = "capalivro2">
+        
+        </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>
