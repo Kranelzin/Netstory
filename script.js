@@ -22,3 +22,7 @@ function mudabotao(mudar,mudar2,mudar3){
     document.getElementById(mudar3).style.borderBottom = 'solid #ff503f 5px'
 
 }
+
+function info(){
+    document.getElementById("capalivro1").src ="info1.png"
+}

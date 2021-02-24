@@ -71,7 +71,7 @@ label span:nth-child(3){
 }
 #menu{
   position: absolute;
-  margin-top: 37px;
+  margin-top: 45px;
   margin-left: -45px;
   display: none;
   background-color: white;
@@ -222,9 +222,9 @@ label span:nth-child(3){
   display: inline-block;
 }
 
-#capalivro{
+#capalivro1{
   position: relative;
-  margin-top: 12%;
+  margin-top: 5%;
   margin-left: 2%;
   border: solid 1px;
   border-radius: 3px;
@@ -232,17 +232,32 @@ label span:nth-child(3){
 
 #capalivro2{
   position: relative;
-  margin-top: 12%;
+  margin-top: 5%;
   margin-left: 2%;
   border: solid 1px;
   border-radius: 3px;
 }
 
+#capalivro3{
+  position: relative;
+  margin-top: 5%;
+  margin-left: 2%;
+  border: solid 1px;
+  border-radius: 3px;
+}
+
+#capalivro4{
+  position: relative;
+  margin-top: 5%;
+  margin-left: 2%;
+  border: solid 1px;
+  border-radius: 3px;
+}
 /*Página Categorias*/
 
 #categoriastitle{
   position: absolute;
-  margin: 2%;
+  margin: 1%;
   text-decoration: underline;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 35px;
