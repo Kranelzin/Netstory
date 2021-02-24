@@ -23,6 +23,11 @@ function mudabotao(mudar,mudar2,mudar3){
 
 }
 
-function info(){
-    document.getElementById("capalivro1").src ="info1.png"
+
+function info(imagem){
+
+    imagem.src= imagem.id+"-info.png";
+}
+function imgnormal(imagem){
+    imagem.src=imagem.id+".png";
 }
